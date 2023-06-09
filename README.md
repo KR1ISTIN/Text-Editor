@@ -24,6 +24,8 @@ npm i express
 ## Usage
 Click link for deployment to Heroku
 <a href='https://text-editor-pwa-kd.herokuapp.com'>Text Editor</a>
+<img width="997" alt="Screen Shot 2023-06-08 at 10 47 52 PM" src="https://github.com/KR1ISTIN/Text-Editor/assets/121457179/4cbe6b37-8c03-4e23-9b27-0432d3c217a8">
+
 
 
 ## Questions 
