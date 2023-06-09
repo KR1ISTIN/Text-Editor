@@ -24,6 +24,7 @@ module.exports = () => {
         template: './index.html',
         title: 'JATE'
       }),
+      new WorkboxPlugin.GenerateSW(),
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: './src-sw.js',
@@ -34,7 +35,7 @@ module.exports = () => {
         description: 'This is a Text Editor using PWA',
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
-        start_url: './',
+        start_url: '/',
         publicPath: './',
         icons: [
           {
@@ -59,6 +60,9 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
+              plugins: [
+                "@babel/transform-runtime",
+              ],
             },
           },
         }, 
